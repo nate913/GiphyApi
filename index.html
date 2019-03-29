@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WWE Giphy Buttons </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body id="wholeThing">
+
+    <div class="jumbotron" id="header">
+        <img id="topImageL" src="assets/images/wwe.gif">
+        <img id="topImageR" src="assets/images/wwe.gif">
+        <h1>WWE SUPER STARS!!!!</h1>
+        <h3>Click the buttons to display GIPHYs of your favorite WWE Super Stars from the past or present(but mostly from the past)<br>Click the
+            GIPHYs to pause and play<br>Search to add more buttons!</h3>
+    </div>
+
+    <form class="form-inline" id="wweSearch">
+        <div class="form-group">
+            <label for="wweInput">Search for a WWE Super Star</label>
+            <input type="text" id="wweInput">
+        </div>
+        <!-- Button triggers wwe to be added -->
+        <input id="addWwe" type="submit" value="submit">
+    </form>
+
+    <div class="row">
+        <div class="container">
+            <div class="btn-group inline pull-left">
+                <button class="btn btn-danger" id="wwe" data-search="Stone Cold Steve Austin">Stone Cold Steve
+                    Austin</button>
+                <button class="btn btn-danger" id="wwe" data-search="The Rock">The Rock</button>
+                <button class="btn btn-danger" id="wwe" data-search="Big Show">Big Show</button>
+                <button class="btn btn-danger" id="wwe" data-search="Triple H">Triple H</button>
+                <button class="btn btn-danger" id="wwe" data-search="Mankind">Mankind</button>
+                <button class="btn btn-danger" id="wwe" data-search="Jeff Hardy">Jeff Hardy</button>
+                <button class="btn btn-danger" id="wwe" data-search="The Dudley Boyz">The Dudley Boyz</button>
+                <button class="btn btn-danger" id="wwe" data-search="Kurt Angle">Kurt Angle</button>
+                <button class="btn btn-danger" id="wwe" data-search="Hulk Hogan">Hulk Hogan</button>
+                <button class="btn btn-danger" id="wwe" data-search="RVD">RVD</button>
+                <button class="btn btn-danger" id="wwe" data-search="The Undertaker">The Undertaker</button>
+                <button class="btn btn-danger" id="wwe" data-search="Kane">Kane</button>
+                <button class="btn btn-danger" id="wwe" data-search="Brock Lesnar">Brock Lesnar</button>
+                <button class="btn btn-danger" id="wwe" data-search="Goldberg">Goldberg</button>
+                <button class="btn btn-danger" id="wwe" data-search="John Cena">John Cena</button>
+                <button class="btn btn-danger" id="wwe" data-search="DX">DX</button>
+                <button class="btn btn-danger" id="wwe" data-search="Kevin Nash">Kevin Nash</button>
+                <button class="btn btn-danger" id="wwe" data-search="Randy Orton">Randy Orton</button>
+                <button class="btn btn-danger" id="wwe" data-search="Ric Flair">Ric Flair</button>
+                <button class="btn btn-danger" id="wwe" data-search="Randy Savage">Randy Savage</button>
+                <button class="btn btn-danger" id="wwe" data-search="rey mysterio">rey mysterio</button>
+
+
+                <div id="myButtons"></div>
+            </div>
+            <!--end of button group -->
+        </div>
+        <!--end of container -->
+    </div>
+    <!--end of row -->
+
+
+    <div class="row">
+        <div class="container">
+            <span>
+                <div id="gifArea"></div>
+            </span>
+        </div>
+        <!--end of container -->
+    </div> <!-- end of row  -->
+
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
